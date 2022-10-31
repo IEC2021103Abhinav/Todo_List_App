@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEFEA"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:textAlignment="gravity"
+    tools:context=".GroupActivity">
+
+    <Button
+        android:id="@+id/NewListButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_weight="0"
+        android:background="#8BC34A"
+        android:onClick="createNewGroup"
+        android:text="Add New List"
+        android:textAllCaps="true"
+        android:textColor="#E40E0E" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupsrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>
